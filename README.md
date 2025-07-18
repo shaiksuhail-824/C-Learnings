@@ -7,8 +7,8 @@ Welcome to my C-learnings repository!
 
 ## What You'll Find Here
 - **C_Notes/**: My typed notes about C concepts.
-- **Practice_problems/**: Solution to Practice problems and exercises.
-- **HackerRank_C_programs/**: HackerRank solutions and codes.
+- **Practice_Problems/**: Solution to Practice problems and exercises.
+- **HackerRank_C_Programs/**: HackerRank solutions and codes.
 
 ## How I Use this Repo
 - I add new notes and code as I learn.

@@ -66,6 +66,6 @@ int main() {
    printf("%d \n",a1);
    a1 %= b1;
    printf("%d \n",a1);
-   
+
    return 0;
 }
