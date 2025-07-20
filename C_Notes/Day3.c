@@ -9,7 +9,7 @@ int main() {
 
     //if-else condition
 
-    // if(age > 18){
+    // if(age > 18){git
     //     printf("you cast the vote!");
     
     // } else {
