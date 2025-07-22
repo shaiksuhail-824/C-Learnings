@@ -58,16 +58,17 @@ for(int i=1;i<=15;i++){
 }
 
 // Nested loop
-for(int k=1;i<=30; i++){
+for(int i=1;i<=30; i++){
     int count=0;
     for(int j=1;j<=30;j++){
         if(i%j==0){
-             count+=i;
+             count+=1;
         }
+    }
     if(count==2){
        printf("%d \n",i);
     }
-    }
+    
 }
 
 
