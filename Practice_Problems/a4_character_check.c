@@ -1,14 +1,14 @@
 # include <stdio.h>
 //A program to check if given character is digit or not.
 int main() {
-    int ch;
-    scanf("%d",&ch);
-    if(ch>97 && ch<123){
-        printf("it is not digit");
-    }else{
+    char a;
+    scanf("%c",&a);
+    if(a>='0' && a<='9'){
         printf("it is digit");
+
+    }else{
+        printf("it is not digit");
     }
 
     return 0;
-//pending
 }
