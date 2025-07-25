@@ -1,5 +1,5 @@
 # include <stdio.h>
-
+// A program to print the number from reverse order and sum.
 int main() {
     int n;
     scanf("%d",&n);

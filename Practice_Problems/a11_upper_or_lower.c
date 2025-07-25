@@ -1,4 +1,5 @@
 # include <stdio.h>
+// A program to check it upper or lower
 int main() {
     char ch;
     printf("Enter:");
