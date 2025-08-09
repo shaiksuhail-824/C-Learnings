@@ -21,6 +21,7 @@
  void square(int n) {
     int result = n*n;
     printf("square numbers : %d \n", result);
+    
       
  }
  // reference Address
