@@ -1,5 +1,5 @@
  # include <stdio.h>
-
+ void square(int n);
 int main() {
     int age = 22;
     int *ptr = &age;
@@ -41,7 +41,11 @@ int main() {
     int i = 10;
     int *p1 = &i;
     int **p2 = &p1;
-    printf("%d \n", **p2);
+    printf("%d \n", **p2); 
+
+    
+
+
     return 0;
 }
 
