@@ -6,7 +6,7 @@ int main() {
     scanf("%c",&ch);
     if(ch>='a' && ch>='z'){
         printf("lower_case");
-    }else if(ch>='a'&& ch<='z'){
+    }else if(ch>='A'&& ch<='Z'){
         printf("upper_case");
     }else{
         printf("Not english character");
