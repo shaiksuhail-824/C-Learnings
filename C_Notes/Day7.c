@@ -85,3 +85,188 @@ void printNumber(int arr_a[],int n){
             printf("%d \n",arr_a[i]);
         }
     }
+// #include <stdio.h>
+// int main(){
+//     int a=10;
+//     int *p;
+//     p=&a;
+//     printf("value of a=%d \n",a);
+//     printf("value of pointer variable=%d \n",*p);
+//     printf("address of a=%d \n",&a);
+//     printf("addrees of pointer variable=%d \n",&(*p));
+//     *p=100;//change the actual variable
+//     printf("value of a=%d \n",a);
+//     printf("value of pointer variable=%d \n",*p);
+//     printf("address of a=%d \n",&a);
+//     printf("addrees of pointer variable=%d \n",&(*p));
+//     a=200;
+//     printf("value of a=%d \n",a);
+//     printf("value of pointer variable=%d \n",*p);
+//     printf("address of a=%d \n",&a);
+//     printf("addrees of pointer variable=%d \n",&(*p));
+//     printf("addrees of pointer variable of p=%d \n",&p);
+//     printf("addrees of pointer variable=%d \n",*(&a));
+
+//  }
+// call by reference using pointer
+// int sum(int *a,int *b);
+// int main(){
+//       int a=10;
+//       int b=20;
+//       sum(&a,&b);
+//       printf("address of a=%d\n",&a);
+//       printf("address of b=%d\n",&b);
+
+// }
+// int sum(int *a,int *b){
+//     printf("address of a=%d\n",&a);
+//     printf("address of b=%d\n",&b);
+//     return 0;
+
+// }
+// pointer to pointer
+// #include <stdio.h>
+// int main(){
+// int a=10;
+// int *x;
+// x=&a;
+// int **y;
+// **y=&x;
+// printf("value of a:%d \n",**y);
+
+//}
+// # include <stdio.h>
+// int main(){
+// int a=10;
+// int *x;
+// x=&a;
+// int **y;
+// **y=&x;
+// y=20;// change the pointer value
+// printf("value of a:%d \n",**y);
+
+// }
+// # include <stdio.h>
+// int main(){
+// int a=10;
+// int *x;
+// x=&a;
+// int **y;
+// **y=&x;
+// printf("value of a:%d \n",**y);
+// printf("addres of a: %d \n",&a);
+// #include <stdio.h>
+// int main(){
+// int a=10;
+// int *x;
+// x=&a;
+// int **y;
+// y=&x;
+// int ***z;
+// z=&y;
+// printf("value of a:%d \n",*x);
+// printf("value of a:%d \n",*x);
+// printf("value of a:%d \n",**y);
+// printf("value of a:%d \n",***z);
+// printf("addres of a: %d \n",&a);
+// printf("addres of a: %d \n",&(*x));
+// printf("addres of a: %d \n",&(**y));
+// printf("addres of a: %d \n",&(**y));
+
+
+// }
+// #include <stdio.h>
+// int main(){
+//     int a=10;
+//     void *x;
+//     x=&a;
+    
+//     printf("valaue of a: \n",x);
+//     printf("valaue of a:%d \n",&x);
+//     printf("valaue of a:%d \n",a);
+//     printf("valaue of a:%d \n",&a);
+// }
+//NULL POINTER
+// #include <stdio.h>
+// int main(){
+//     int *x=NULL;
+//     printf("value of pointer variable x=%d\n",x);
+// }
+// Case 1 : constant pointer
+// #include <stdio.h>
+// int main(){
+//    int a=10;
+//    const int *x;
+//    x=&a;
+//    printf("value of a:%d \n",*x);//it holding 
+//    printf("value of a:%d \n",*(&a));
+
+// }
+//case 2:const variable
+// #include <stdio.h>
+// int main(){
+//    const int a=10;
+//    int *x;
+//    x=&a;
+//    printf("value of a:%d \n",*x);//it holding 
+//    printf("value of a:%d \n",*(&a));
+// }
+//case 3:Both const pointer and variable
+// #include <stdio.h>
+// int main(){
+//    const int a=10;
+//    const int *x;
+//    x=&a;
+//    //*x=12;assignment of read-only location ‘*x’
+//    printf("value of a:%d \n",*x);//it holding 
+//    printf("value of a:%d \n",*(&a));
+
+// }
+//ARRAY AND POINTER
+// #include <stdio.h>
+// int main(){
+//     int x[5]={10,20,30,40,50};
+//     //acessing address of the array without pointer
+//     //moderate method
+//     printf("address of variable x[0]:%d \n",&x[0]);
+//     printf("address of variable x[1]:%d \n",&x[1]);
+//     printf("address of variable x[2]:%d \n",&x[2]);
+//     printf("value of variable x[0]:%d \n",x[0]);
+//     printf("value of variable x[1]:%d \n",x[1]);
+//     printf("value of variable x[2]:%d \n",x[2]);
+//     // traditional method
+//     printf("address of variable x0:%d \n",x);
+//     printf("address of variable x1:%d \n",x+1);
+//     printf("address of variable x2:%d \n",(x+2));
+//     printf("value of variable x:%d \n",*x);
+//     printf("value of variable x[0]:%d \n",*(x+0));
+//     printf("value of variable x[1]:%d \n",*(x+1));
+//     printf("value of variable x[2]:%d \n",*(x+2));
+   
+
+// }
+//if change the value of pointer variable.
+// #include <stdio.h>
+// int main(){
+//     int x[5]={10,20,30,40,50};
+//     int *p;
+//     p=x;
+//     *(p+2)=100;//assign the values
+//     *(p+4)=450;
+//     printf("addresso of  variable=%d\n",x);
+//     printf("addresso of pointer  variable=%d\n",p);
+//     printf("addresso of x[0]=%d\n",p+0);
+//     printf("addresso of x[1]=%d\n",p+1);
+//     printf("addresso of x[2]=%d\n",p+2);
+//     printf("addresso of x[3]=%d\n",p+3);
+//     printf("addresso of x[4]=%d\n",p+4);
+//     printf("value  of x[0]=%d\n",*(p+0));
+//     printf("value  of x[1]=%d\n",*(p+1));
+//     printf("value  of x[2]=%d\n",*(p+2));
+//     printf("value  of x[3]=%d\n",*(p+3));
+//     printf("value  of x[4]=%d\n",*(p+4));
+
+
+
+
+
