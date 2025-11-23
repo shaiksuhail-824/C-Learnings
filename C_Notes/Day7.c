@@ -85,6 +85,209 @@ void printNumber(int arr_a[],int n){
             printf("%d \n",arr_a[i]);
         }
     }
+
+// #include <stdio.h>
+// //1.Write a program to convert a string from uppercase to lowercase and lower case to upper case
+// // 'A' to 'Z' is 65 to 90.'a' to 'z' is 97 to 122
+// // 'A'+32='a'
+// // 'a'-32='A'
+// int main(){
+//        char s[100];
+//        scanf("%s[^\n]",s);//string with spaces
+//        for(int i=0;s[i]!='\0';i++){
+//                     if(s[i]>='A'&& s[i]<='Z'){
+//                                   s[i]= s[i]+32;//convert uppercase to lower case
+//                     }else{ 
+//                          s[i] = s[i]-32;// convert lowercase to upper case
+                    
+//                     }
+//        }       
+//       //output
+//       printf("string s =%s \n",s);          
+//        return 0;
+
+// }
+
+/*
+#include <stdio.h>
+#include <ctype.h>
+//2.Write a program to count the number of vowels,consonants and digits in a string.
+int main(){
+        char s[100];
+        scanf("%[^\n]",s);//%[^\n] is include space and number also terminate you click enter
+        int vowels=0,consonants=0,digits=0;
+        for(int i=0;s[i]!=0;i++){
+                   char ch=tolower(s[i]);
+                      if(isalpha(ch)){
+                            if(ch == 'a'||ch == 'e'||ch == 'i'||ch == 'o'||ch == 'u'){
+                                              vowels++;
+                            }else{
+                                  consonants++;
+                            }
+                      }else if(isdigit(ch)){
+                                   digits++;
+                      }
+                                            
+        }
+        printf("vowels:%d \n",vowels);
+        printf("consonants:%d \n",consonants);
+        printf("digits:%d \n",digits);
+       return 0;
+}
+*/
+/*
+# include <stdio.h>
+# include <string.h>
+//3.Write a program to reverse a string without using the strrev() function.
+int main(){
+       char str[100],str1[100];
+       scanf("%[^\n]",str);
+       int strLen = strlen(str);
+       for(int i=0;i<strLen;i++){
+                    str1[i]=str[strLen-i-1]; 
+      }
+      str[strLen]='\0';
+      printf("reverse str:%s\n",str1);
+       return 0;
+}
+*/
+/*
+# include <stdio.h>
+//4.Write a program to find the length of a string without using strlen().
+int  main(){
+        char str[100];
+        scanf("%[^\n]",str);
+        int len=0;
+        for(int i = 0;str[i]!='/0';i++){
+                     len=len+1;
+        }
+        printf("length_of_string:%d",len);
+        return 0;
+}
+*/
+/*
+#include <stdio.h>
+#include <string.h>
+//5.Write a program to check whether a string is a palindrome.
+int main() {
+    char str[100];
+    int i, len, isPalindrome = 1;   // assume it is a palindrome
+
+    printf("Enter a string: ");
+    scanf("%[^\n]", str);   // read string including spaces
+
+    len = strlen(str);
+
+    for (i = 0; i < len / 2; i++) {
+        if (str[i] != str[len - i - 1]) {
+            isPalindrome = 0;   // mismatch found
+            break;
+        }
+    }
+
+    if (isPalindrome == 1) {
+        printf("It is a Palindrome\n");
+    } else {
+        printf("It is Not a Palindrome\n");
+    }
+
+    return 0;
+}
+*/
+
+//Write a program to remove all spaces from a string.
+
+//Write a program to replace all vowels with * in a string.
+
+//Write a program to copy one string into another without using strcpy().
+/*
+# include <stdio.h>
+# include <ctype.h>
+# include <string.h>
+//5.Write a program to count the number of words in a string.
+int main(){
+        int count =0;
+        char str[100];
+        scanf("%[^\n]",str);
+        int strLen=strlen(str);
+        for(int i=0;i<strLen;i++){
+                    if(isspace(str[i])){
+                              count++;
+                    }
+        }
+        printf("the no of words are%d",count+1);
+        return 0;
+}
+*/
+
+// # include <stdio.h>
+// # include <string.h>
+// //We want to sort the characters of a string in ascending order (A → Z or a → z).
+// int main(){
+//           char str[100],temp;
+//           scanf("%[^\n]",str);
+//           int len = strlen(str);
+//           for(int i =0;i<len;i++){
+//                   for(int j=i+1;j<len-1;j++){
+//                              if(str[i]>str[j]){
+//                                          temp = str[i];
+//                                          str[i] = str[j];
+//                                          str[j] = temp;
+//                               }
+//                   }
+//           }
+//           printf("%s",str);                           
+//           return 0;
+// }
+
+
+// //Array_of_string
+// # include <stdio.h>
+// # include <string.h>
+// //1.Write a program to find the strings starting with “c” and “a” for the given n input strings..
+// int main(){
+//       int n;
+//       printf("Enter the no of strings be:");
+//       scanf("%d",&n);
+//       char str[n][20];
+//       for(int i=0;i<n;i++){
+//                    printf("Enter the strings %d:",i+1);
+//                    scanf("%19s",str[i]);//reads upto 19 characters and leaves space for null terminator
+                  
+//       }
+//       printf("Enter strings start with 'c' and 'a': \n");
+//     for(int i=0;i<n;i++){
+
+//             // check if string starts with 'c' or 'a'
+//              if(str[i][0]=='c' || str[i][0]=='a'){
+//                           printf("%s \n",str[i]);
+//             }
+//      }
+//       return 0;    
+// }
+
+
+// #include <stdio.h>
+// //2. Write a program to print the words of given input string in reverse order For  Eg. If input string is “I am an Indian”, the output would be “Indian an am I” 
+
+// int main() {
+//     int n;
+//     printf("Enter the string length:");
+//     scanf("%d",&n);
+//     printf("Input strings:");
+//     char str[n][20];
+
+//     for (int i = 0; i < n; i++) {
+//         scanf("%s", str[i]);
+//     }
+
+//     for (int i = n - 1; i >= 0; i--) {
+//         printf("%s ", str[i]);
+//     }
+
+//     return 0;
+// }
+
 // #include <stdio.h>
 // int main(){
 //     int a=10;
@@ -266,7 +469,185 @@ void printNumber(int arr_a[],int n){
 //     printf("value  of x[3]=%d\n",*(p+3));
 //     printf("value  of x[4]=%d\n",*(p+4));
 
+//#include <stdio.h>
 
+//int main(){
+//-32,768 to 32,767 int range
 
+//1.malloa() functions
+//2.calloc() function
+//3.realloc()
+//4.free()
+//__________________________
+//1.malloc()
+//the function dynamic allocation the block of memory
+//p=(int *a)malloc(*x):
+// p=(int *a)
+// create dynamic memory using malloc 
 
+//}
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main(){
+//     int *p,n;
+//     printf("Enter the number");
+//     scanf("%d",&n);
+//     p=(int *)malloc(n*sizeof(int));
+//     if(p!=NULL){
+//         printf("memory is allocation");
+
+//     }
+// }
+//create dynamic program using 5 assign the integer values
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main(){
+//     int *p,n;
+//     printf("Enter the number");
+//     scanf("%d",&n);
+//     p=(int *)malloc(n*sizeof(int));
+//     if(p==NULL){
+//         printf("memory is not allocation");
+
+//     }else{
+//         for(int i=0;i<5;i++){
+//             scanf("%d",p+i);
+//         }
+//         for(int i=0;i<5;i++){
+//             printf("%d \n",*(p+i));
+//         }
+//     }
+// }
+#include <stdio.h>
+#include <stdlib.h>
+struct student {
+    char name[20];
+    int id;
+};
+int main(){
+struct student *s;
+s=(struct student*)malloc(sizeof( struct student));
+s->id=100;
+printf("%d",s->id);
+}
+//2.calloc--continues memory allocation
+//calloc function is alllocated continues dynamic memory by using same syntax
+   // p=(int *)calloc(n,sizeof(int));
+
+//calloc need two argument 1.num of element 2.size of element
+//1.create dynamic memory usin callow function
+ //#include <stdio.h>
+// #include <stdlib.h>
+// int main(){
+//     int *p,n;
+//     printf("Enter the number");
+//     scanf("%d",&n);
+//     p=(int *)malloc(n*sizeof(int));
+//     if(p!=NULL){
+//         printf("memory is allocation");
+
+//     }
+// }
+//2.create dynamic memory assign the integer values
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main(){
+//     int *p,n;
+//     printf("Enter the number");
+//     scanf("%d",&n);
+//     p=(int *)calloc(n,sizeof(int));
+//     if(p==NULL){
+//         printf("memory is not allocation");
+
+//     }else{
+//         for(int i=0;i<n;i++){
+//             scanf("%d",p+i);
+//         }
+//         for(int i=0;i<n;i++){
+//             printf("%d \t",*(p+i));
+//         }
+//     }
+// }
+//3.realloc() --reallocation
+// realloction function allocate re memory whicnh is create by m and n block
+//it is usef=d to create new memory.
+//p=(int  *)realloc(pointer variable,new size);
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main(){
+//     int *p,n,n2;
+//     printf("Enter the number");
+//     scanf("%d",&n);
+//     p=(int *)malloc(n*sizeof(int));
+//     printf("memory addresss \n");
+//     for(int i=0;i<n;i++){
+//         printf("%d \n",p+i);
+//     }
+
+//     printf("Enter the new size \n");
+//     scanf("%d",&n2);
+//     p=(int *)realloc(p,n2);
+//     printf("new memory addresss \n");
+//     for(int i=0;i<n2;i++){
+//         printf("%d \n",p+i);
+//     }
+// }
+//free() is used to delete the memory which is created by m and n block.
+//syntax -- free(pointer variable)
+// int *p;
+// p=(int *)malloc(n*size(int));
+// free(p);
+
+    // #include <stdio.h>
+
+// int main(int argc, char *argv[]) {
+
+//     printf("Number of arguments = %d\n", argc);
+
+//     for (int i = 0; i < argc; i++) {
+//         printf("Argument %d : %s\n", i, argv[i]);
+//     }
+
+//     return 0;
+// }
+
+//gcc command_line_arguments.c -o command_line_arguments
+//./command_line_arguments hello world 123
+//sum of two numbers
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+
+    int a = atoi(argv[1]);
+    int b = atoi(argv[2]);
+
+    printf("Sum = %d\n", a + b);
+
+    return 0;
+}
+//./command_line_arguments 2 9
+//atoi() stands for ASCII to Integer.
+
+//It is a function in C used to convert a string (char array) into an integer value.
+// #include <stdio.h>
+
+// int main(int argc, char *argv[])
+// {
+//     int i;
+
+//     if (argc == 1) {  // Only program name
+//         printf("No elements to display...\n");
+//     }
+//     else {
+//         printf("List of elements:\n");
+
+//         // Print all arguments except program name
+//         for (i = 1; i < argc; i++) {
+//             printf("%s\n", argv[i]);
+//         }
+//     }
+
+//     return 0;
+// }
 
